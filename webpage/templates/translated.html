@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{%block title%}LinguaLink | Translated{% endblock %}
+{% block body %}
+<br>
+<hr class="neon-blue">
+<hr class="neon-red">
+<br>
+<center>
+<div class="translated-text"
+  <h1 class="heading">
+  Source Text: {{data[0]}}<br><br>
+  Translated Text: {{data[1]}}
+  </h1>
+  <br>
+  <br>
+<audio controls>
+    <source src="../static/translated.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+</center>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %} First Page {% endblock %}
+
+{% block body %}
+<br><br><br><center>
+<div class="button-container">
+<form action="/text_to_text" method="post">
+    <button class="button"><b>Input as Text</b></button>
+</form>
+<br><br><br>
+<form action="/speech_input" method="post">
+    <button class="button"><b>Input as Speech</b></button>
+</form>
+<br><br><br>
+<form action="/sign_classifier" method="post">
+    <button class="button"><b>Input as Sign</b></button>
+</form>
+</div>
+</center>
+{% endblock %}

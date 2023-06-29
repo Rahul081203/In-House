@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}LinguaLink | Sign-Language{% endblock %}
+
+{% block body %}
+<br>
+<h1 class="heading">Sign Language Translation</h1>
+<hr class="neon-red">
+<hr class="neon-blue">
+<br><br><br>
+<center>
+<img src="{{ url_for('video_feed') }}" width="640" height="480" class="sign-video">
+</center>
+{% endblock %}
