@@ -44,7 +44,7 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 @app.route('/sign_classifier', methods=['GET','POST'])
-def sign_language_classfier():
+def sign_language_classifier():
     return render_template('sign_input.html')
 
 @app.route('/text_to_text',methods = ['GET','POST'])

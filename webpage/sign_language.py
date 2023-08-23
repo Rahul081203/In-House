@@ -52,7 +52,7 @@ def classify_sign(frame):
 
 def process_webcam_feed():
     # Create an instance of cv2.VideoCapture
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
     while True:
         # Read the frame from the video capture
